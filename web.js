@@ -9,4 +9,4 @@ var server = http.createServer(function(req, res) {
     res.write(message);
     res.end();
 });
-server.listen(80);
+server.listen(process.env.PORT || 8080);
